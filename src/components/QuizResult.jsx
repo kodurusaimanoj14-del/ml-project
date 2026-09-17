@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import confetti from 'canvas-confetti';
 import { RotateCcw, Home, Award, CheckCircle, XCircle } from './Icons';
 import { audioService } from '../utils/audioUtils';
 
@@ -18,8 +19,9 @@ export const QuizResult = ({
     // Trigger colorful confetti burst if score is good (>= 60%)
     if (percentage >= 60) {
       try {
-        if (typeof window !== 'undefined' && window.confetti) {
-          window.confetti({
+        const fireConfetti = confetti || (typeof window !== 'undefined' ? window.confetti : null);
+        if (typeof fireConfetti === 'function') {
+          fireConfetti({
             particleCount: 100,
             spread: 70,
             origin: { y: 0.6 }
