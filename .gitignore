@@ -1,0 +1,24 @@
+# Logs and temporary files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.system_generated/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test artifacts and screenshots
+*.png
+test_shot.png
+home_check.png
+desktop_home_v2.png
+letter_detail_check.png
+desktop_full_home_clean.png
+word_detail_screen.png
+word_detail_full.png
+
+# Dependencies
+node_modules/

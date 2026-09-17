@@ -1,0 +1,12 @@
+{
+  "name": "telugu-learning-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Interactive Telugu Learning App for Beginners (తెలుగు నేర్చుకుందాం)",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build.js"
+  }
+}
